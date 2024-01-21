@@ -1,12 +1,16 @@
 package cuentas;
-
+/**
+ * Clase para representar operaciones de una cuenta bancaria.
+ * @author [José Miguel López Torres]
+ * @version 1.0
+ */
 public class CCuenta {
 
 
     private String nombre;
     private String cuenta;
     private double saldo;
-    private double tipoInterés;
+    private double tipoInteres;
 
     public CCuenta()
     {
@@ -14,8 +18,17 @@ public class CCuenta {
 
     public CCuenta(String nom, String cue, double sal, double tipo)
     {
+    	/**
+    	 * nombre titular de la cuenta.
+    	 */
         nombre =nom;
+        /**
+         * cuenta actual
+         */
         cuenta=cue;
+        /**
+         * Saldo de la cuenta.
+         */
         saldo=sal;
     }
 
@@ -64,11 +77,11 @@ public class CCuenta {
 		this.saldo = saldo;
 	}
 
-	public double getTipoInterés() {
-		return tipoInterés;
+	public double getTipoInteres() {
+		return tipoInteres;
 	}
 
-	public void setTipoInterés(double tipoInterés) {
-		this.tipoInterés = tipoInterés;
+	public void setTipoInteres(double tipoInteres) {
+		this.tipoInteres = tipoInteres;
 	}
 }
